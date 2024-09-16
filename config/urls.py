@@ -10,5 +10,6 @@ router.register(r'books', BookModelViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include(router.urls)),
+    path('books/', include(router.urls)),
+    path('univer/', include('univer.urls')),
 ]
